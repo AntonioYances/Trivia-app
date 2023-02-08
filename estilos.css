@@ -1,0 +1,240 @@
+*{
+    background-color: black;
+    color: rebeccapurple;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+header{
+    text-align: center;
+}
+#contenedor_marcador{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#marcador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 85px;
+    width: 760px;
+    background-color: aliceblue;
+    color: rebeccapurple;
+    margin-bottom: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: baseline;
+}
+#optionCategory{
+    display: flex;
+    flex-direction: column;
+    border: 50px;  
+   
+}
+#difficulty{
+    margin-bottom: 20px;
+    
+}
+#type{
+    margin-bottom: 20px;
+}
+#categoria{
+    margin-bottom: 20px;
+}
+#botonCrear_container{
+    display: flex;  
+    align-items: center;
+    justify-content: center;    
+}
+ #crear{
+    background-color: aliceblue;
+    border-radius: 25px;
+    width: 200px;
+} 
+#preguntas{
+    background-color: aliceblue;
+    height: 85px;
+    width: 760px;
+    border-radius: 85px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.respuestas{
+    display: flex;      
+    flex-direction: column;
+    margin-bottom: 20px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    
+}
+
+#reset{
+    display: none;
+    justify-content: center;
+    align-items: center;    
+    border-radius: 25px;   
+}
+#boton_reset{
+    color: rebeccapurple;
+    background-color: aliceblue;
+    border-radius: 25px;
+    width: 200px;
+    height: 60px;
+}
+.boton1{
+    background-color: aliceblue;
+    border-radius: 25px;
+    width: 200px;
+}
+.boton0{
+    background-color: aliceblue;
+    border-radius: 25px;
+    width: 200px;
+}
+.boton1{
+    background-color: aliceblue;
+    border-radius: 25px;
+    width: 200px;
+}
+.boton2{
+    background-color: aliceblue;
+    border-radius: 25px;
+    width: 200px;
+}
+.boton3{
+    background-color: aliceblue;
+    border-radius: 25px;
+    width: 200px;
+}
+
+.burbuja{
+    border-radius: 50%;
+    background: rgb(207, 14, 220);
+    opacity: .3;
+
+    position: absolute;
+    bottom: -150;
+    
+    animation: burbujas 3s linear infinite ;
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    background-color: rgba(200, 18, 48, 0.367);
+}
+
+.burbuja:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+    background-color: chartreuse;
+}
+
+.burbuja:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+    background-color: gold;
+}
+
+.burbuja:nth-child(5){
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    background-color: firebrick;
+}
+
+.burbuja:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(7){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+    background-color: yellow;
+}
+
+.burbuja:nth-child(8){
+    width: 100;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    background-color: aliceblue;
+}
+
+.burbuja:nth-child(9){
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(10){
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Tivia APP</title>
+</head>
+<body>
+    <header><h1>Tivia APP</h1></header>
+    <div id="contenedor_marcador"><span id="marcador"></span></div>
+<div class="container">
+        <div id="optionCategory">
+            <select name="difficulty" id="difficulty">
+                <option>Selecciona una opcion</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <select name="type" id="type">
+                <option>Selecciona una opcion</option>
+                <option value="multiple">multiple</option>
+                <option value="boolean">boolean</option>
+            </select>            
+        </div>
+        
+    <div id="preguntas"></div>
+      
+</div>
+    <div class="respuestas"></div>
+
+    <div id="botonCrear_container"><button id="crear" onclick=getData()>Crear</button></div>
+    
+    
+    <div id="reset"></div>
+    
+    <div class="burbujas">
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
